@@ -8,7 +8,7 @@ function Header() {
   return (
     <>
       <HeaderContainer>
-          <ImgLogo src="./public/logo/HPLogo.png"/>
+          <ImgLogo src="/logo/HPLogo.png"/>
           <NavbarContainer>
             <LinksOl>
               <LinkLi><a href="#">Home</a></LinkLi>

@@ -8,7 +8,7 @@ const Hero = () => {
   return (
       <SectionHero>
         <Title>Descifra la magia. Explora el mundo de Harry Potter.</Title>
-        <SubTitle>Sumérgete en la saga que cautivó a millones. Descubre libros, películas, personajes y mucho más.</SubTitle>
+        <SubTitle>Explora una amplia selección de productos oficiales, desde varitas y túnicas hasta libros y coleccionables</SubTitle>
         <ButtonHero>Explorar el Mundo Mágico</ButtonHero>
       </SectionHero>
   )

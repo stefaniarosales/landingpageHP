@@ -4,14 +4,15 @@ export const HeaderContainer=styled.header`
 
     display: flex;
     height: 80px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0.5rem 1.5rem;
+    background-color: white;
 
     position: fixed;
     top: 0;
     left: 0;
-    width: 95%;
+    width: 100%;
     z-index: 1000;
 
 `;
@@ -26,16 +27,18 @@ export const ImgLogo=styled.img`
 
 export const NavbarContainer=styled.nav`
 
+    width: 70%;
     display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    justify-content: flex-end;
+    margin: 0;
 `;
 
 export const LinksOl=styled.ol`
-
+    width: 70%;
     display: flex;
+    justify-content: flex-end;
     gap: 1rem;
+    padding-right: 1rem;
 `;
 
 export const LinkLi=styled.li`

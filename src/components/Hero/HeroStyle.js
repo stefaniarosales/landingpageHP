@@ -9,11 +9,14 @@ export const SectionHero=styled.section`
     align-items: flex-end;
     gap: 1rem;
     padding-top: 80px;
+    margin-top: 80px;
     padding-bottom: 2rem;
 
-    background-image: url(./public/hero/hogwartsHero.jpg);
+    background-image: url(/hero/hogwartsHero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
 `
 export const Title=styled.h1`
 

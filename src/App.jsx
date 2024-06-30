@@ -1,6 +1,7 @@
 
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
+import AboustUs from './components/AboustUs/AboustUs'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header/>
       <Hero/>
+      <AboustUs/>
     </>
   )
 }
