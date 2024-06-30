@@ -1,11 +1,14 @@
 import React from 'react'
+import { FooterContainer, InfoP } from './FooterStyle'
 
 const Footer = () => {
     
   return (
-    <div>
-      
-    </div>
+    <>
+      <FooterContainer>
+        <InfoP>Creado por Stefania</InfoP>
+      </FooterContainer>
+    </>
   )
 }
 
