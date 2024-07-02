@@ -10,7 +10,6 @@ export const CardContainer = styled.div`
     border: 1px solid #eee;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 `;
 
 export const Imagen = styled.img`
@@ -31,12 +30,14 @@ export const Precio = styled.p`
 `;
 
 
-
-
 /* Section Products Container */
+export const SubTitleProducts = styled.h2`
+  text-align: center;
+  font-size: 1.5rem;
+`;
 export const SectionContainer = styled.section`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   padding: 32px;
 `;
@@ -51,16 +52,17 @@ export const ProductsContainer = styled.div`
 
 /* Button Agregar */
 export const ButtonAdd = styled.button`
-  background-color: #ff0000;
-  color: white; 
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    padding: 10px 25px;
+    margin: 0 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #d43227;
+    color: white; 
+    font-size: 1rem; 
 
-  &:hover {
-    background-color: #c60000;
-  }
+    &:hover {
+      background-color: #c60000;
+      cursor: pointer;
+    }
 `;
 

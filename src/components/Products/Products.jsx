@@ -1,5 +1,6 @@
+import React from 'react'
 import Card from "./Card";
-import { SectionContainer, ProductsContainer } from "./ProductsStyle";
+import { SectionContainer, ProductsContainer, SubTitleProducts } from "./ProductsStyle";
 
 const articulos = [
   {
@@ -10,40 +11,40 @@ const articulos = [
   },
   {
     id: 2,
-    imagen: "/products/VaritaHarryPotter.webp",
+    imagen: "/products/BufandaGryffindor.webp",
     titulo: "Bufanda de Gryffindor",
     precio: 1800,
   },
   {
     id: 3,
-    imagen: "/products/VaritaHarryPotter.webp",
-    titulo: "Gafas redondas",
+    imagen: "/products/EscobaHarryPotter.jpg",
+    titulo: "Escoba Harry Potter",
     precio: 1200,
   },
   {
     id: 4,
-    imagen: "/products/VaritaHarryPotter.webp",
-    titulo: "Gafas redondas",
-    precio: 1200,
+    imagen: "/products/TunicaGryffindor.jpg",
+    titulo: "Tunica Gryffindor",
+    precio: 4000,
   },
   {
     id: 5,
-    imagen: "/products/VaritaHarryPotter.webp",
-    titulo: "Gafas redondas",
-    precio: 1200,
+    imagen: "/products/CajaJoyeriaMixHarryPotter.webp",
+    titulo: "Caja de Joyeria Mixto",
+    precio: 5500,
   },
   {
     id: 6,
-    imagen: "/products/VaritaHarryPotter.webp",
-    titulo: "Gafas redondas",
-    precio: 1200,
+    imagen: "/products/SombreroHarryPotter.jpg",
+    titulo: "Sombrero",
+    precio: 3500,
   },
 ];
 
 const Products = () => {
   return (
     <SectionContainer>
-      <h2>Productos de Harry Potter</h2>
+      <SubTitleProducts>Tesoros de Hogwarts</SubTitleProducts>
       <ProductsContainer>
         {articulos.map((producto) => (
           <Card key={producto.id} {...producto} />

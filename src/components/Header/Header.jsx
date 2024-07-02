@@ -1,10 +1,8 @@
-
+import React from 'react'
 import { HeaderContainer, ImgLogo, NavbarContainer, LinksOl, LinkLi} from "./HeaderStyle"
 
 
 function Header() {
-
-
   return (
     <>
       <HeaderContainer>
@@ -20,6 +18,6 @@ function Header() {
       </HeaderContainer>
     </>
   )
-}
+};
 
 export default Header

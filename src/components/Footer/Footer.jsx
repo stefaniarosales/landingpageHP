@@ -2,7 +2,6 @@ import React from 'react'
 import { FooterContainer, InfoP } from './FooterStyle'
 
 const Footer = () => {
-    
   return (
     <>
       <FooterContainer>
@@ -10,6 +9,6 @@ const Footer = () => {
       </FooterContainer>
     </>
   )
-}
+};
 
 export default Footer
