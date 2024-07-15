@@ -1,23 +1,18 @@
 import React from 'react'
-import { HeaderContainer, ImgLogo, NavbarContainer, LinksOl, LinkLi} from "./HeaderStyle"
+import { HeaderContainerStyled} from "./HeaderStyle"
+import Navbar from '../Navbar/Navbar'
 
 
 function Header() {
   return (
     <>
-      <HeaderContainer>
-          <ImgLogo src="/logo/HPLogo.png"/>
-          <NavbarContainer>
-            <LinksOl>
-              <LinkLi><a href="#">Home</a></LinkLi>
-              <LinkLi><a href="#">Aboust Us</a></LinkLi>
-              <LinkLi><a href="#">Products</a></LinkLi>
-              <LinkLi><a href="#">Contact</a></LinkLi>
-            </LinksOl>
-          </NavbarContainer>
-      </HeaderContainer>
+      <HeaderContainerStyled>
+        <Navbar/>
+      </HeaderContainerStyled>
     </>
   )
 };
 
 export default Header
+
+

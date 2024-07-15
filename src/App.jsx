@@ -4,12 +4,15 @@ import Hero from "./components/Hero/Hero";
 import AboustUs from "./components/AboustUs/AboustUs";
 import Products from "./components/Products/Products";
 import Footer from "./components/Footer/Footer";
+import Navbar from './components/Navbar/Navbar';
+
+
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
+      <Header/>
+      <Hero/>
       <AboustUs />
       <Products />
       <Footer/>

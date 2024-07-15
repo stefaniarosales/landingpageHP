@@ -23,6 +23,7 @@ export const Title=styled.h1`
     font-size: 2rem;
     padding: 0 1rem;
     text-align: center;
+    max-width: 1250px;
 `;
 
 export const SubTitle=styled.h2`
