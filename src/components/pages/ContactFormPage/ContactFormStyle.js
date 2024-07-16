@@ -7,6 +7,7 @@ export const ContainerContactPage = styled.div`
     align-items: center;
     height: 100vh;
     padding: 0 3rem;
+    padding-top: 100px;
 
 `
 export const FormContainer = styled.div`

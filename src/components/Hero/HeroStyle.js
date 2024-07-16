@@ -6,11 +6,13 @@ export const SectionHero=styled.section`
     align-items: flex-start;
     gap: 1rem;
     padding: 5rem 3rem;
+    padding-top: 100px;
+    height: 400px;
 
     background-image: url(/hero/hogwartsHero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: top center;
 
     @media (max-width: 768px) {
 		align-items: center;

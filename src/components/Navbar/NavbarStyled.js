@@ -3,10 +3,19 @@ import styled from "styled-components";
 export const NavbarContainerStyled = styled.nav`
 
     display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:70px;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1.5rem;
     background-color: white;
+    -webkit-box-shadow: 0px 1px 8px -2px rgba(176,176,176,0.34);
+    -moz-box-shadow: 0px 1px 8px -2px rgba(176,176,176,0.34);
+    box-shadow: 0px 1px 8px -2px rgba(176,176,176,0.34);
     a{
         font-size: 1rem;
         font-weight: bolder;
@@ -31,6 +40,7 @@ export const NavbarContainerStyled = styled.nav`
             position: initial;
             top: 0;
             margin: 0;
+            padding-left: 3rem;
             a{
                 font-size: 1rem;
                 color: black;
@@ -73,5 +83,6 @@ export const NavbarContainerStyled = styled.nav`
 export const ImgLogoStyled =styled.img`
     width: 4rem;
     padding: 0.5rem;
+    padding-right: 3rem;
     cursor: pointer;
 `;
