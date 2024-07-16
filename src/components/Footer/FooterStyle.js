@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const FooterContainer=styled.footer`
+export const FooterContainerStyled=styled.footer`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,7 +8,7 @@ export const FooterContainer=styled.footer`
     background-color: #d43227;
 `;
 
-export const InfoP=styled.p`
+export const InfoPStyled=styled.p`
     font-weight: bolder;
     color: white;
     padding: 1rem;

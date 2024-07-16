@@ -6,9 +6,7 @@ export const NavbarContainerStyled = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1.5rem;
-
     background-color: white;
-
     a{
         font-size: 1rem;
         font-weight: bolder;
@@ -33,7 +31,6 @@ export const NavbarContainerStyled = styled.nav`
             position: initial;
             top: 0;
             margin: 0;
-
             a{
                 font-size: 1rem;
                 color: black;
@@ -55,13 +52,11 @@ export const NavbarContainerStyled = styled.nav`
         left: 0;
         right: 0;
         text-align: center;
-        
 
         border-radius: 0 0 80% 0;
         backdrop-filter: blur(16px) saturate(180%);
         -webkit-backdrop-filter: blur(16px) saturate(180%);
         background-color: rgba(255, 255, 255, 0.75);
-
         a{
             color: black;
             font-size: 2rem;
@@ -73,7 +68,6 @@ export const NavbarContainerStyled = styled.nav`
             display: none;
         }
     }
-
 `
 
 export const ImgLogoStyled =styled.img`

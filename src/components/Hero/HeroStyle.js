@@ -6,7 +6,6 @@ export const SectionHero=styled.section`
     align-items: flex-start;
     gap: 1rem;
     padding: 5rem 3rem;
-    margin-top: 70px;
 
     background-image: url(/hero/hogwartsHero.jpg);
     background-repeat: no-repeat;
@@ -23,7 +22,7 @@ export const Title=styled.h1`
     font-size: 2rem;
     padding: 0 1rem;
     text-align: center;
-    max-width: 1250px;
+    max-width: 1050px;
 `;
 
 export const SubTitle=styled.h2`
@@ -32,6 +31,7 @@ export const SubTitle=styled.h2`
     font-size: 1rem;
     text-align: center;
     padding: 0 1rem;
+    max-width: 1050px;
 `;
 
 export const ButtonHero=styled.button`
@@ -43,6 +43,7 @@ export const ButtonHero=styled.button`
     color: white; 
     font-size: 1rem; 
     align-items: flex-start;
+    max-width: 1050px;
 
     &:hover{
         background-color: #992721;

@@ -1,12 +1,12 @@
 import React from 'react'
-import { FooterContainer, InfoP } from './FooterStyle'
+import { FooterContainerStyled, InfoPStyled } from './FooterStyle'
 
 const Footer = () => {
   return (
     <>
-      <FooterContainer>
-        <InfoP>Creado por Stefania</InfoP>
-      </FooterContainer>
+      <FooterContainerStyled>
+        <InfoPStyled>Creado por Stefania</InfoPStyled>
+      </FooterContainerStyled>
     </>
   )
 };
