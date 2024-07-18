@@ -16,7 +16,7 @@ export const ContainerContactPage = styled.div`
     }
 `
 export const ImgContactContainer = styled.div`
-    background-image: url(../public/pages/contactanos/Contactanos.jpg);
+    background-image: url(../pages/contactanos/Contactanos.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
