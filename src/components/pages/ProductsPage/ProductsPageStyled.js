@@ -40,6 +40,7 @@ export const SectionContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   padding: 32px;
+  padding-top: 100px;
 `;
 
 export const ProductsContainer = styled.div`

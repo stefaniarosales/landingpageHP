@@ -1,25 +1,45 @@
 import styled from "styled-components";
 
 export const ContainerContactPage = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
     padding: 0 3rem;
+    gap: 2rem;
     padding-top: 100px;
 
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+`
+export const ImgContactContainer = styled.div`
+    background-image: url(../public/pages/contactanos/Contactanos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 900px;
+    padding: 20px;
+    height: 60%;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        height: 40%;
+    }
 `
 export const FormContainer = styled.div`
+    height: 60%;
     max-width: 900px;
     padding: 20px;
     background-color: #f8f8f8;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    /* @media (max-width: 768px) {
-        
-    } */
+    @media (max-width: 768px) {
+        height: 40%;
+    }
 `;
 
 export const FormTitle = styled.h2`
