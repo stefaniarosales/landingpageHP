@@ -24,13 +24,13 @@ export const NavbarContainerStyled = styled.nav`
 
   .links {
     position: absolute;
-    top: 0; /* Initial position for smoother transition */
+    top: -200px; /* Initial position for smoother transition */
     left: 0;
     right: 0;
     margin: 0 auto;
     text-align: center;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Separate transitions for transform and opacity */
-    opacity: 0; /* Initially hidden */
+    opacity: 1; /* Initially hidden */
 
     a {
       color: black;
@@ -40,7 +40,7 @@ export const NavbarContainerStyled = styled.nav`
 
     @media (min-width: 768px) {
       position: initial;
-      transform: translateY(0); /* No need for initial top offset here */
+      transform: translateY(0);
       opacity: 1; /* Visible on larger screens */
       margin: 0;
       padding-left: 3rem;
@@ -54,10 +54,9 @@ export const NavbarContainerStyled = styled.nav`
 
   .links.active {
     background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.5px );
     -webkit-backdrop-filter: blur( 5.5px );
-    height: 120vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
