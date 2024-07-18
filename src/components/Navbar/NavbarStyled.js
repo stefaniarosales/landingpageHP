@@ -1,84 +1,87 @@
 import styled from "styled-components";
 
+
 export const NavbarContainerStyled = styled.nav`
+  display: flex;
+  flex-direction: row-reverse;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  box-shadow: 0px 1px 8px -2px rgba(176, 176, 176, 0.34);
 
-    display: flex;
-    flex-direction: row-reverse;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height:70px;
-    justify-content: space-between;
+  a {
+    font-size: 1rem;
+    font-weight: bolder;
     align-items: center;
-    padding: 0.5rem 1.5rem;
-    background-color: white;
-    -webkit-box-shadow: 0px 1px 8px -2px rgba(176,176,176,0.34);
-    -moz-box-shadow: 0px 1px 8px -2px rgba(176,176,176,0.34);
-    box-shadow: 0px 1px 8px -2px rgba(176,176,176,0.34);
-    a{
-        font-size: 1rem;
-        font-weight: bolder;
-        align-items: center;
-        margin-right: 1rem;
-    }
-    .links {
-        position: absolute;
-        top: -700px;
-        left: -2000px;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        transition: all .5s ease; 
-        a{
-            color: black;
-            font-size: 2rem;
-            display: block;
-        }
-        @media(min-width: 768px){
-            position: initial;
-            top: 0;
-            margin: 0;
-            padding-left: 3rem;
-            a{
-                font-size: 1rem;
-                color: black;
-                display: inline;
-            }
-        } 
-    }
-    .links.active{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        top: 1px;
-        left: 0;
-        right: 0;
-        text-align: center;
+    margin-right: 1rem;
+  }
 
-        border-radius: 0 0 80% 0;
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: rgba(255, 255, 255, 0.75);
-        a{
-            color: black;
-            font-size: 2rem;
-            margin-top: 1rem;
-        }
+  .links {
+    position: absolute;
+    top: 0; /* Initial position for smoother transition */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Separate transitions for transform and opacity */
+    opacity: 0; /* Initially hidden */
+
+    a {
+      color: black;
+      font-size: 2rem;
+      display: block;
     }
-    .burger{
-        @media(min-width: 768px) {
-            display: none;
-        }
+
+    @media (min-width: 768px) {
+      position: initial;
+      transform: translateY(0); /* No need for initial top offset here */
+      opacity: 1; /* Visible on larger screens */
+      margin: 0;
+      padding-left: 3rem;
+      a {
+        font-size: 1rem;
+        color: black;
+        display: inline;
+      }
     }
-`
+  }
+
+  .links.active {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-70px); /* Transitioning state */
+    opacity: 1; /* Fully visible */
+    /* ... other styles for active state */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Separate transitions for smooth animation */
+
+    a {
+      color: black;
+      font-size: 2rem;
+      margin-top: 1rem;
+      transition: all 0.5s ease; /* Maintain a separate transition for link elements within the active state */
+    }
+  }
+
+  .burger {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+`;
+
+
 
 export const ImgLogoStyled =styled.img`
     width: 4rem;
