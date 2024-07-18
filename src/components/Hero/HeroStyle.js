@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const SectionHero=styled.section`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     gap: 1rem;
     padding: 5rem 3rem;
     padding-top: 100px;
-    height: 400px;
+    height: 500px;
 
     background-image: url(/hero/hogwartsHero.jpg);
     background-repeat: no-repeat;
@@ -16,6 +17,8 @@ export const SectionHero=styled.section`
 
     @media (max-width: 768px) {
 		align-items: center;
+        background-position: center right;
+        justify-content: center;
 	}
 `;
 
@@ -24,7 +27,7 @@ export const Title=styled.h1`
     font-size: 2rem;
     padding: 0 1rem;
     text-align: center;
-    max-width: 1050px;
+    max-width: 950px;
 `;
 
 export const SubTitle=styled.h2`
@@ -33,7 +36,7 @@ export const SubTitle=styled.h2`
     font-size: 1rem;
     text-align: center;
     padding: 0 1rem;
-    max-width: 1050px;
+    max-width: 950px;
 `;
 
 export const ButtonHero=styled.button`
@@ -45,14 +48,10 @@ export const ButtonHero=styled.button`
     color: white; 
     font-size: 1rem; 
     align-items: flex-start;
-    max-width: 1050px;
+    max-width: 950px;
 
     &:hover{
         background-color: #992721;
         cursor: pointer;
     }
-
-    @media (max-width: 768px) {
-		align-items: center;
-	}
 `;

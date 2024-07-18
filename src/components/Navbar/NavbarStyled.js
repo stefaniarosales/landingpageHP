@@ -60,6 +60,8 @@ export const NavbarContainerStyled = styled.nav`
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding-top: 6rem;
     transform: translateY(-70px); /* Transitioning state */
     opacity: 1; /* Fully visible */
     /* ... other styles for active state */

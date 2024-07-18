@@ -47,6 +47,10 @@ export const ProductsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+  padding: 3rem 8rem;
+  @media (max-width: 768px) {
+        padding: 0;
+    }
 `;
 
 
