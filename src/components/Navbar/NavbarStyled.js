@@ -83,8 +83,7 @@ export const NavbarContainerStyled = styled.nav`
 
 
 export const ImgLogoStyled =styled.img`
-    width: 4rem;
-    padding: 0.5rem;
-    padding-right: 3rem;
+    width: 45px;
+    padding-right: 4rem;
     cursor: pointer;
 `;

@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
-export const ContainerStyled = styled.div`
+export const ContainerStyled = styled.section`
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: white;
-    padding: 0 3rem;
     padding-top: 100px;
+    padding: 0 2rem;
     text-align: center;
 `;
 

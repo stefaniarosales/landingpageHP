@@ -6,7 +6,7 @@ export const ContainerContactPage = styled.div`
     justify-content: center;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 0 3rem;
+    padding: 0 2rem;
     gap: 2rem;
     padding-top: 100px;
 
@@ -21,7 +21,6 @@ export const ImgContactContainer = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     max-width: 900px;
-    padding: 20px;
     height: 60%;
     width: 100%;
 
@@ -32,13 +31,14 @@ export const ImgContactContainer = styled.div`
 export const FormContainer = styled.div`
     height: 60%;
     max-width: 900px;
-    padding: 20px;
+    padding: 0.5rem;
     background-color: #f8f8f8;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     @media (max-width: 768px) {
         height: 40%;
+        padding-bottom: 1.5rem;
     }
 `;
 

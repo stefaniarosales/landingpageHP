@@ -39,7 +39,7 @@ export const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 32px;
+  padding:  0 2rem;
   padding-top: 100px;
 `;
 
