@@ -7,7 +7,7 @@ export const SectionAboutsUs=styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 1.5rem 2rem;
 `;
 

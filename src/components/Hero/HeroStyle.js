@@ -26,11 +26,6 @@ export const Title=styled.h1`
     color: white;
     font-size: 2rem;
     max-width: 950px;
-
-    @media (max-width: 768px) {
-        text-align: center;
-    }
-
 `;
 
 export const SubTitle=styled.h2`
