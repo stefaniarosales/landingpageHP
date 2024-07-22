@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 
 export const NavbarContainerStyled = styled.nav`
@@ -23,6 +23,7 @@ export const NavbarContainerStyled = styled.nav`
   }
 
   .links {
+    display: flex;
     position: absolute;
     top: -200px; 
     left: 0;
@@ -78,10 +79,26 @@ export const NavbarContainerStyled = styled.nav`
       display: none;
     }
   }
+
+  .hoverLink {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.hoverLink::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+  transform-origin: left center;
+}
+
+.hoverLink:hover::after {
+  width: 100%;
+}
 `;
-
-
-
 export const ImgLogoStyled =styled.img`
     width: 45px;
     padding-right: 4rem;

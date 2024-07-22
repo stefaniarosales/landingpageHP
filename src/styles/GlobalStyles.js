@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         background-color: white;
-        font-family: "sans-serif",sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         color: black;
         box-sizing: content-box;
     };
