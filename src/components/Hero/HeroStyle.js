@@ -26,7 +26,10 @@ export const Title=styled.h1`
     color: white;
     font-size: 2rem;
     max-width: 950px;
-    outline: 1px red solid;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 
 `;
 
@@ -35,7 +38,10 @@ export const SubTitle=styled.h2`
     font-weight: lighter;
     font-size: 1rem;
     max-width: 950px;
-    outline: 1px red solid;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 
 `;
 
