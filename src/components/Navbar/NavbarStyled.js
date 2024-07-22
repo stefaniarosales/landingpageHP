@@ -85,7 +85,7 @@ export const NavbarContainerStyled = styled.nav`
     display: block;
     width: 0;
     height: 2px;
-    background-color: red;
+    background-color: #7F0909;
     transition: width 0.3s ease-in-out;
     transform-origin: left center;
 }}

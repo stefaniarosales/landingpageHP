@@ -55,14 +55,16 @@ export const ProductsContainer = styled.div`
 export const ButtonAdd = styled.button`
     padding: 10px 25px;
     margin: 0 1rem;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #d43227;
+    background-color: #7F0909;
     color: white; 
     font-size: 1rem; 
 
     &:hover {
-      background-color: #c60000;
+      background-color: #FFC500;
+      color: #7F0909;
       cursor: pointer;
     }
 `;

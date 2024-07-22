@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerStyled = styled.section`
+    
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@ export const ItemsStyled = styled.div`
 
 export const ItemStyled = styled.p`
     font-weight: bold;
-    color: #d43227; 
+    color: #7F0909 ; 
     font-size: 14px;
     max-width: 950px;
     @media (max-width: 768px) {

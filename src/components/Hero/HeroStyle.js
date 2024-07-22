@@ -44,14 +44,16 @@ export const ButtonHero=styled.button`
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #d43227;
+    background-color: #7F0909;
     color: white; 
     font-size: 1rem; 
+    font-weight: bold;
     align-items: flex-start;
     max-width: 950px;
 
     &:hover{
-        background-color: #992721;
+        background-color: #FFC500;
+        color: #7F0909;
         cursor: pointer;
     }
 `;

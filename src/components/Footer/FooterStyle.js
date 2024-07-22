@@ -5,7 +5,7 @@ export const FooterContainerStyled=styled.footer`
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    background-color: #d43227;
+    background-color:#7F0909;
 `;
 
 export const InfoPStyled=styled.p`

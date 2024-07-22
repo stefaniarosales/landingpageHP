@@ -81,13 +81,15 @@ export const SubmitButton = styled.button`
     padding: 10px 30px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #d43227;
+    background-color: #7F0909;
     color: white; 
     font-size: 1rem;
+    font-weight: bold;
     text-align: center;
 
     &:hover {
-        background-color: #c60000;
+        background-color: #FFC500;
+        color: #7F0909;
         cursor: pointer;
     }
 /*    @media (max-width: 768px) {
