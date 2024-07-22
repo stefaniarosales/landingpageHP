@@ -37,16 +37,20 @@ export default function Navbar() {
   const [clicked, setClicked] = useState(false)
 
   const handleclick = () => setClicked(!clicked)
+
+  const closeNavbar = () => setClicked(false) //cerrar el navbar al hacer click
+  
+
   return (
     <>
       <NavbarContainerStyled>
         <ImgLogoStyled src='./logo/HPLogo.png'/>
         <div className={`links ${clicked ? 'active' : ''}`}>
 
-          <Link to='/'>Home</Link>
-          <Link to='AboutUsPage'>About Us</Link>
-          <Link to='ProductsPage'>Products</Link>
-          <Link to='ContactPage'>Contact</Link>
+          <Link to='/' onClick={closeNavbar}>Home</Link>
+          <Link to='AboutUsPage' onClick={closeNavbar}>About Us</Link>
+          <Link to='ProductsPage' onClick={closeNavbar}>Products</Link>
+          <Link to='ContactPage' onClick={closeNavbar}>Contact</Link>
         </div>
         <div className='burger'>
           <BurgerButton clicked={clicked} handleClick={handleclick}/>
