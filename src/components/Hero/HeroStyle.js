@@ -6,7 +6,7 @@ export const SectionHero=styled.section`
     justify-content: center;
     align-items: flex-start;
     gap: 1rem;
-    padding: 5rem 3rem;
+    padding: 5rem 2rem;
     padding-top: 100px;
     height: 500px;
 
@@ -17,7 +17,7 @@ export const SectionHero=styled.section`
 
     @media (max-width: 768px) {
 		align-items: center;
-        background-position: center right;
+        background-position: center center;
         justify-content: center;
 	}
 `;
@@ -25,23 +25,22 @@ export const SectionHero=styled.section`
 export const Title=styled.h1`
     color: white;
     font-size: 2rem;
-    padding: 0 1rem;
-    text-align: center;
     max-width: 950px;
+    outline: 1px red solid;
+
 `;
 
 export const SubTitle=styled.h2`
     color: white;
     font-weight: lighter;
     font-size: 1rem;
-    text-align: center;
-    padding: 0 1rem;
     max-width: 950px;
+    outline: 1px red solid;
+
 `;
 
 export const ButtonHero=styled.button`
     padding: 10px 20px;
-    margin: 0 1rem;
     border-radius: 5px;
     cursor: pointer;
     background-color: #d43227;

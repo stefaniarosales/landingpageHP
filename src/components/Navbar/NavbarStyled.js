@@ -7,11 +7,11 @@ export const NavbarContainerStyled = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width:100%;
   height: 70px;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2rem;
   background-color: white;
   box-shadow: 0px 1px 8px -2px rgba(176, 176, 176, 0.34);
 
@@ -24,13 +24,13 @@ export const NavbarContainerStyled = styled.nav`
 
   .links {
     position: absolute;
-    top: -200px; /* Initial position for smoother transition */
+    top: -200px; 
     left: 0;
     right: 0;
     margin: 0 auto;
     text-align: center;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Separate transitions for transform and opacity */
-    opacity: 1; /* Initially hidden */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
 
     a {
       color: black;
@@ -41,9 +41,8 @@ export const NavbarContainerStyled = styled.nav`
     @media (min-width: 768px) {
       position: initial;
       transform: translateY(0);
-      opacity: 1; /* Visible on larger screens */
+      opacity: 1; 
       margin: 0;
-      padding-left: 3rem;
       a {
         font-size: 1rem;
         color: black;
@@ -62,16 +61,15 @@ export const NavbarContainerStyled = styled.nav`
     justify-content: center;
 
     padding-top: 6rem;
-    transform: translateY(-70px); /* Transitioning state */
-    opacity: 1; /* Fully visible */
-    /* ... other styles for active state */
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Separate transitions for smooth animation */
+    transform: translateY(-70px); 
+    opacity: 1; 
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
 
     a {
       color: black;
       font-size: 2rem;
       margin-top: 1rem;
-      transition: all 0.5s ease; /* Maintain a separate transition for link elements within the active state */
+      transition: all 0.5s ease; 
     }
   }
 

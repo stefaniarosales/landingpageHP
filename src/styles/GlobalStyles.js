@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
         background-color: white;
         font-family: "sans-serif",sans-serif;
         color: black;
+        box-sizing: content-box;
     };
 
     main {
