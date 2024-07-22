@@ -80,11 +80,6 @@ export const NavbarContainerStyled = styled.nav`
     }
   }
 
-  .hoverLink {
-    color: #007bff;
-    text-decoration: none;
-}
-
 .hoverLink::after {
   content: '';
   display: block;
@@ -93,11 +88,24 @@ export const NavbarContainerStyled = styled.nav`
   background-color: red;
   transition: width 0.3s ease-in-out;
   transform-origin: left center;
+
+    @media (max-width: 768px) {
+      .hoverLink::after {
+        display: none;
+      }
+      .hoverLink:hover::after {
+        display: none;
+      }
+      .hoverLink:hover:not(:hover-target)::after {
+        display: none;
+      }
+    }
 }
 
 .hoverLink:hover::after {
   width: 100%;
 }
+
 `;
 export const ImgLogoStyled =styled.img`
     width: 45px;
