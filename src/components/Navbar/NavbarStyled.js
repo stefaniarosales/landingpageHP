@@ -79,28 +79,16 @@ export const NavbarContainerStyled = styled.nav`
       display: none;
     }
   }
-
-.hoverLink::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background-color: red;
-  transition: width 0.3s ease-in-out;
-  transform-origin: left center;
-
-    @media (max-width: 768px) {
-      .hoverLink::after {
-        display: none;
-      }
-      .hoverLink:hover::after {
-        display: none;
-      }
-      .hoverLink:hover:not(:hover-target)::after {
-        display: none;
-      }
-    }
-}
+  @media (min-width: 768px) {
+    .hoverLink::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.3s ease-in-out;
+    transform-origin: left center;
+}}
 
 .hoverLink:hover::after {
   width: 100%;
