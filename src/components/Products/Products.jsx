@@ -1,47 +1,12 @@
 import React from 'react'
 import Card from "./Card";
+import { articulos } from '../../data/products.js';
 import { SectionContainer, ProductsContainer, SubTitleProducts } from "./ProductsStyle";
 
-const articulos = [
-  {
-    id: 1,
-    imagen: "/products/VaritaHarryPotter.webp",
-    titulo: "Varita mágica",
-    precio: 2500,
-  },
-  {
-    id: 2,
-    imagen: "/products/BufandaGryffindor.webp",
-    titulo: "Bufanda de Gryffindor",
-    precio: 1800,
-  },
-  {
-    id: 3,
-    imagen: "/products/EscobaHarryPotter.jpg",
-    titulo: "Escoba Harry Potter",
-    precio: 1200,
-  },
-  {
-    id: 4,
-    imagen: "/products/TunicaGryffindor.jpg",
-    titulo: "Tunica Gryffindor",
-    precio: 4000,
-  },
-  {
-    id: 5,
-    imagen: "/products/CajaJoyeriaMixHarryPotter.webp",
-    titulo: "Caja de Joyeria Mixto",
-    precio: 5500,
-  },
-  {
-    id: 6,
-    imagen: "/products/SombreroHarryPotter.jpg",
-    titulo: "Sombrero",
-    precio: 3500,
-  },
-];
+import {useSelector, useDispatch} from 'react-redux'
+import { addproduct, removeproduct } from '../../redux/productsSlice';
 
-const Products = () => {
+/* const Products = () => {
   return (
     <SectionContainer>
       <SubTitleProducts>Tesoros de Hogwarts</SubTitleProducts>
@@ -54,4 +19,28 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Products; */
+
+const Products = () => {
+
+  const products = useSelector((state)=> state.products.products)
+  const dispatch = useDispatch()
+
+
+  const handleAddProduct = (newProduct) => {
+    dispatch(addproduct(newProduct))
+  }
+
+  return (
+    <SectionContainer>
+      <SubTitleProducts>Tesoros de Hogwarts</SubTitleProducts>
+      <ProductsContainer>
+        {articulos.map((producto) => (
+          <Card key={producto.id} {...producto} />
+        ))}
+      </ProductsContainer>
+    </SectionContainer>
+  );
+}
+
+export default Products

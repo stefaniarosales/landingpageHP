@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-    width: 250px;
+    width:300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,9 +13,9 @@ export const CardContainer = styled.div`
 `;
 
 export const Imagen = styled.img`
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
     margin-bottom: 16px;
 `;
 
@@ -57,7 +57,7 @@ export const ProductsContainer = styled.div`
 /* Button Agregar */
 export const ButtonAdd = styled.button`
     font-weight: bold;
-    padding: 10px 25px;
+    padding: 15px 40px;
     margin: 0 1rem;
     border-radius: 5px;
     cursor: pointer;

@@ -1,6 +1,7 @@
 import React from 'react'
 import { CardContainer, Imagen, Titulo, Precio} from './ProductsStyle';
 import { ButtonAdd } from './ProductsStyle';
+import { addproduct } from '../../redux/productsSlice';
 
 
 const Card = ({ imagen, titulo, precio }) => {
@@ -9,7 +10,7 @@ const Card = ({ imagen, titulo, precio }) => {
       <Imagen src={imagen} alt={titulo} />
       <Titulo>{titulo}</Titulo>
       <Precio>${precio}</Precio>
-      <ButtonAdd /* onClick={() => onAddToCart(producto)} */>Agregar</ButtonAdd>
+      <ButtonAdd onClick={() => addproduct()}>Agregar</ButtonAdd>
     </CardContainer>
   );
 };
