@@ -13,9 +13,9 @@ export const CardContainer = styled.div`
 `;
 
 export const Imagen = styled.img`
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 250px;
+    height: 350px;
+    object-fit: contain;
     margin-bottom: 16px;
 `;
 
@@ -53,7 +53,7 @@ export const ProductsContainer = styled.div`
 
 /* Button Agregar */
 export const ButtonAdd = styled.button`
-    padding: 10px 25px;
+    padding: 15px 40px;
     margin: 0 1rem;
     font-weight: bold;
     border-radius: 5px;

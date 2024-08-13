@@ -3,6 +3,8 @@ import React from 'react'
 import { useState } from 'react'
 import { NavbarContainerStyled, ImgLogoStyled} from './NavbarStyled'
 import BurgerButton from './BurgerButton/BurgerButton'
+import Cart from './Cart/Cart'
+import { ContainerLogoCart } from './Cart/CartStyled'
 
 import { Link, Outlet } from 'react-router-dom'
 
@@ -17,16 +19,21 @@ export default function Navbar() {
   return (
     <>
       <NavbarContainerStyled>
-        <ImgLogoStyled src='./logo/HPLogo.png'/>
+        <ContainerLogoCart>
+          <Cart/>
+          <ImgLogoStyled src='./logo/HPLogo.png'/>
+        </ContainerLogoCart>
         <div className={`links ${clicked ? 'active' : ''}`}>
           <Link className='hoverLink' to='/' onClick={closeNavbar}>Home</Link>
           <Link className='hoverLink' to='AboutUsPage' onClick={closeNavbar}>About Us</Link>
           <Link className='hoverLink' to='ProductsPage' onClick={closeNavbar}>Products</Link>
           <Link className='hoverLink' to='ContactPage' onClick={closeNavbar}>Contact</Link>
         </div>
+        
         <div className='burger'>
           <BurgerButton clicked={clicked} handleClick={handleclick}/>
         </div>
+        
       </NavbarContainerStyled>
       <Outlet/>
     </>
