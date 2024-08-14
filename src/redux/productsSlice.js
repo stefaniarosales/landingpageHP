@@ -1,22 +1,20 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { articulos } from "../data/products";
+import { createSlice } from '@reduxjs/toolkit';
+import { articulos } from '../data/products';
 
-const INITIAL_STATE = {
+const initialState = {
     products: articulos,
-}
+    selectedCategory: '',
+};
 
-const productsSlice = createSlice({
+export const productsSlice = createSlice({
     name: 'products',
-    initialState: INITIAL_STATE,
+    initialState,
     reducers: {
-        addproduct: (state, action) => {
-            state.products.push(action.payload)
+        selectCategory: (state, action) => {
+            state.selectedCategory = action.payload;
         },
-        removeproduct: (state, action) => {
-            return state.filter(product=>product!==action.payload)
-        }
-    }
-})
+    },
+});
 
-export const { addproduct, removeproduct} = productsSlice.actions
-export default productsSlice.reducer
+export const { selectCategory } = productsSlice.actions;
+export default productsSlice.reducer;

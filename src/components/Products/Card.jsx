@@ -1,7 +1,7 @@
 import React from 'react'
 import { CardContainer, Imagen, Titulo, Precio} from './ProductsStyle';
 import { ButtonAdd } from './ProductsStyle';
-import { addproduct } from '../../redux/productsSlice';
+
 
 
 const Card = ({ imagen, titulo, precio }) => {

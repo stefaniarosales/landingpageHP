@@ -4,7 +4,7 @@ export const articulos = [
       imagen: "/products/VaritaHarryPotter.webp",
       titulo: "Varita de Harry Potter",
       precio: 2500,
-      category: "acesorrios",
+      category: "varitas",
     },
     {
       id: 2,
@@ -78,7 +78,7 @@ export const articulos = [
         category: "libros"
       },
       {
-        id: 12,
+        id: 21,
         imagen: "/products/HarryPotterYElMisterioDelPrincipe.png",
         titulo: "Harry Potter y el misterio del principe",
         precio: 1700,
@@ -96,7 +96,7 @@ export const articulos = [
         imagen: "/products/VaritaVoldemort.jpg",
         titulo: "Varita de Lord Voldemort",
         precio: 2500,
-        category: "acesorrios",
+        category: "varitas",
     },
     {
         id: 14,
@@ -124,21 +124,21 @@ export const articulos = [
         imagen: "/products/VaritaLuna.jpg",
         titulo: "Varita de Luna",
         precio: 2500,
-        category: "acesorrios",
+        category: "varitas",
     },
     {
         id: 18,
         imagen: "/products/VaritaDracoMalfoy.jpg",
         titulo: "Varita de Draco Malfoy",
         precio: 2500,
-        category: "acesorrios",
+        category: "varitas",
     },
     {
         id: 19,
         imagen: "/products/VaritaHermione.webp",
         titulo: "Varita de Hermione",
         precio: 2500,
-        category: "acesorrios",
+        category: "varitas",
     },
     {
         id: 20,
