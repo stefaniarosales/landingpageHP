@@ -5,7 +5,7 @@ export const CategContainer = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 1rem;
 `
 
@@ -21,4 +21,10 @@ export const BtnCategory = styled.button`
     background-color:#7F0909;
     color: white; 
     font-size: 1rem;
+
+    @media (max-width: 768px) {
+        width: 120px;
+        padding: 0.5rem;
+        margin: 0;
+    }
 `
