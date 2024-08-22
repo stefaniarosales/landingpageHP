@@ -7,12 +7,12 @@ import Categorys from './Categorys/Categorys.jsx';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectCategory } from '../../redux/productsSlice';
 
-const Products = () => {
+const Products = ({onAddToCart}) => {
   const products = useSelector((state) => state.products.products);
   const selectedCategory = useSelector((state) => state.products.selectedCategory);
-  const dispatch = useDispatch();   
+  const dispatch = useDispatch();
 
-
+  //seleccion de category al hace click
   const handleCategoryClick = (category) => {
     dispatch(selectCategory(category));
   };
@@ -27,8 +27,8 @@ const Products = () => {
       <SubTitleProducts>Tesoros de Hogwarts</SubTitleProducts>
       <Categorys onCategoryClick={handleCategoryClick} />
       <ProductsContainer>
-        {filteredProducts.map((producto) => (
-          <Card key={producto.id} {...producto} />
+        {filteredProducts.map((articulos) => (
+          <Card key={articulos.id} {...articulos} onAddToCart={onAddToCart} />
         ))}
       </ProductsContainer>
     </SectionContainer>

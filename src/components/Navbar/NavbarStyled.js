@@ -100,3 +100,10 @@ export const ImgLogoStyled =styled.img`
     padding-right: 4rem;
     cursor: pointer;
 `;
+
+export const ContainerLogoCart =styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+`

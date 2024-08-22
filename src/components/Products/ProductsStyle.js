@@ -64,6 +64,7 @@ export const ButtonAdd = styled.button`
     background-color:#7F0909;
     color: white; 
     font-size: 1rem; 
+    transition: background-color 0.3s ease;
 
     &:hover {
       background-color: #FFC500;
