@@ -27,8 +27,8 @@ const Products = ({onAddToCart}) => {
       <SubTitleProducts>Tesoros de Hogwarts</SubTitleProducts>
       <Categorys onCategoryClick={handleCategoryClick} />
       <ProductsContainer>
-        {filteredProducts.map((articulos) => (
-          <Card key={articulos.id} {...articulos} onAddToCart={onAddToCart} />
+        {filteredProducts.map((product) => (
+          <Card key={product.id} {...product} onAddToCart={onAddToCart} />
         ))}
       </ProductsContainer>
     </SectionContainer>

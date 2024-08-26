@@ -70,6 +70,7 @@ export const ButtonAdd = styled.button`
       background-color: #FFC500;
       color:#7F0909;
       cursor: pointer;
+      
     }
 `;
 

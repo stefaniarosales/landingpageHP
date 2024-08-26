@@ -30,11 +30,25 @@ const Cart = () => {
     dispatch(removeItem({ id }))
   };
 
-  const handleQuantityChange = (id, newQuantity) => {
-    if (newQuantity > 0) {
-      dispatch(updateQuantity({ id, quantity: newQuantity }))
+
+
+
+  const handleQuantityChange = (id, delta) => {
+    setQuantity(id, delta);
+  };
+
+  const setQuantity = (id, delta) => {
+    const item = items.find(item => item.id === id);
+    if (item) {
+      const newQuantity = item.quantity + delta;
+      if (newQuantity > 0) {
+        dispatch(updateQuantity({ id, quantity: newQuantity }));
+      }
     }
-  }
+  };
+
+
+
 
   const handleClearCart = () => {
     dispatch(clearCart());
@@ -82,13 +96,13 @@ const Cart = () => {
                   <CartItemTitle>{item.titulo}</CartItemTitle>
                   <CartItemPrice>${item.precio}</CartItemPrice>
                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                    <QuantityButton onClick={() => handleQuantityChange(item.id, item.quantity - 1)}>-</QuantityButton>
+                    <QuantityButton onClick={() => handleQuantityChange(item.id,-1)}>-</QuantityButton>
                     <CartItemQuantity
                       type="number"
                       value={item.quantity}
                       readOnly
                     />
-                    <QuantityButton onClick={() => handleQuantityChange(item.id, item.quantity + 1)}>+</QuantityButton>
+                    <QuantityButton onClick={() => handleQuantityChange(item.id, 1)}>+</QuantityButton>
                   </div>
                 </CartItemDetails>
 
