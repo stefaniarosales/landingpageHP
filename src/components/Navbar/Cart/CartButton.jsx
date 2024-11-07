@@ -11,7 +11,6 @@ const CartButton = () => {
   const isOpen = useSelector((state) => state.cart.isOpen)
 
   return (
-    
     <ButtonCartStyled onClick={() => dispatch(toggleCart())}>
       { isOpen ? <CloseIcon /> : <ShoppingCartIcon />}
     </ButtonCartStyled>

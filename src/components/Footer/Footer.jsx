@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <FooterContainerStyled>
-        <InfoPStyled>Creado por Stefania</InfoPStyled>
+        <InfoPStyled>"Desarrollado por Stefania Rosales | Página creada con fines educativos"</InfoPStyled>
       </FooterContainerStyled>
     </>
   )
