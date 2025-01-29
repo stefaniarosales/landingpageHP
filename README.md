@@ -1,6 +1,6 @@
 # 🧙‍♂️ Landing page HP
 
-**Landing page HP** es una aplicación web diseñada para los fanáticos del mundo mágico de Harry Potter. La app permite explorar productos, agregarlos al carrito y realizar compras con una experiencia fluida e intuitiva.  
+**Landing page HP** es landing page diseñada para los fanáticos del mundo mágico de Harry Potter. La app permite explorar productos, agregarlos al carrito y realizar compras con una experiencia fluida e intuitiva.  
 
 ## 🖼️ Capturas de pantalla  
  <img src="https://github.com/stefaniarosales/pottermania/blob/main/public/hero-web.png" width="350px"> <img src="https://github.com/stefaniarosales/pottermania/blob/main/public/about-web.png" width="350px"> <img src="https://github.com/stefaniarosales/pottermania/blob/main/public/products-web.png" width="350px"><img src="https://github.com/stefaniarosales/pottermania/blob/main/public/contact-web.png" width="350px">
